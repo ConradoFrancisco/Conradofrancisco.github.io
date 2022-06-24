@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Diez mil</title>
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="diezmil.html">
+                <img src="imagenes/Group1.png"id="logo">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a href="diezmil.html"class="navbar-item">
+                  Inicio
+                </a>
+          
+                <a href="juego.html"class="navbar-item">
+                  Jugar
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable proximamente">
+                  <a class="navbar-link">
+                    Mas
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Creador
+                    </a>
+                    <a class="navbar-item">
+                      Puntajes historicos
+                    </a>
+                    <a class="navbar-item">
+                      Contacto
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Reportar un error
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-light proximamente">
+                      <strong>Registrate</strong>
+                    </a>
+                    <a class="button is-light proximamente">
+                      Accede
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+          <section class="hero is-primary mt-3 mb-3">
+            <div class="hero-body is-centered">
+                <h1 class="title is-2 has-text-centered">
+                    Bienvenido al juego del diez mil
+                  </h1>
+            </div>
+          </section>
+          
+          <section class="container ">
+            <article class="columns ">                
+                <div class="column is-8">
+                    <div class="box is-primary">
+                        <article class="message is-info">
+                            <div class="message-header">
+                                <h2 class="subtitle is-4 has-text-white has-text-weight-bold">Como Jugar?</h2>
+                            </div>
+                                <div class="message-body">
+                                    <p class="has-text-weight-semibold"> 
+                                        El diez mil es un juego en el que se lanzan seis dados. Se necesita un mínimo de dos jugadores y y un maximo de 5, el objetivo es llegar a suma diez mil puntos. Para sumar puntos cada jugador o jugadora deberá obtener durante su turno diferentes combinaciones. Para iniciar el juego se determina quien inicia las rondas de partidas y el orden de los jugadores. En cada turno los jugadores empiezan lanzando los seis dados, si se obtienen números unos, cincos, tres números iguales o mas de cualquier valor se podrá seguir jugando o plantarse y sumar los puntos. Si no se obtiene ninguna de las combinaciones mencionadas anteriormente, se pierde el turno, el jugador no suma puntos y el turno pasa al siguiente jugador.
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                </div>
+               
+                <div class="column is-4">
+                    <div class="box is-primary">
+                        <article class="message is-info">
+                            <div class="message-header">
+                              <h2 class="subtitle is-4 has-text-white has-text-weight-bold">Reglas de puntaje</h2>
+                            </div>
+                            <div class="message-body">
+                               <p class="has-text-weight-semibold"> 
+                                Para sumar puntos deberas sacar En tu primer tiro, un minimo de un "1" , un "5" o una combinación de 3 dados o mas iguales, cada uno te otorgara 100 puntos, 50 , o los puntos definidos en la <a href="#tables">tabla</a> debajo respectívamente. Una vez acumulados esos puntos deberas tirar otra vez los dados sacando los que ya te dieron puntos o retirarte.
+                                </p>
+                            </div>
+                          </article>
+                    </div>
+                </div>                
+                </article>
+                <article class="columns is-mobile">
+                    <div class="column is-info">
+                        <h2 class="subtitle is-4 has-text-centered has-text-weight-bold notification is-primary">Veamos unos ejemplos</h2>
+                    </div>
+                </article>
+                <article class="columns">       
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image">
+                                <img src="imagenes/posibilidades/Sin título.png" alt="Placeholder image" >
+                              </figure>
+                            </div>
+                            <div class="card-content is-info">                         
+                              <div class="content">
+                                <p class="has-text-semibold">En este caso nos encontramos con que tenemos 2 unos y 2 cincos, cada uno de esos dados otorga 100 y 50 puntos respectivamente, por lo que tendriamos un total de 300.</p>
+                              </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-weight-bold">Ejemplo 1</a>
+                              </footer>
+                        </div> 
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image">
+                                <img src="imagenes/posibilidades/caso2.png" alt="Placeholder image" >
+                              </figure>
+                            </div>
+                            <div class="card-content">                         
+                              <div class="content">
+                                <p class="has-text-semibold">En este caso nos encontramos con 3 numeros iguales (2) y nada mas, por lo que multiplicares por 100 el numero repetido, dando un total de 200 puntos.</p>
+                              </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-weight-bold">Ejemplo 2</a>
+                              </footer>
+                          </div>
+                        </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image">
+                                <img src="imagenes/posibilidades/caso3.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">                         
+                              <div class="content">
+                                <p class="has-text-semibold">En este caso nos encontramos con 3 numeros unos, que es un caso especial, ya que el total resultante sería multiplicar el numero 1 por 1000 siendo así 1000 puntos.</p>
+                              </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-weight-bold">Ejemplo 3</a>
+                              </footer>
+                          </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image">
+                                <img src="imagenes/posibilidades/caso4.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">                         
+                              <div class="content">
+                                <p class="has-text-semibold">En este caso nos encontramos 3 numeros iguales (5) y ademas tenemos 2 numeros unos, lo cual significa que sumamos todo, 500 de los cincos y 200 de los unos.</p>
+                              </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-weight-bold">Ejemplo 4</a>
+                              </footer>
+                          </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image">
+                                <img src="imagenes/posibilidades/caso5.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">                         
+                              <div class="content has-text-weight-semibold">
+                                <p class="">Siendo este el peor de los casos, no conseguimos ningun numero 1, ningun numero 5, ni ninguna combinacion de 3 o mas numeros, por lo que perdemos el turno.</p>
+                              </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-weight-bold">Ejemplo 5</a>
+                              </footer>
+                          </div>
+                    </div>
+                </article>
+                <article class="columns is-mobile">
+                    <div class="column is-primary">
+                        <h2 class="subtitle is-3 has-text-centered has-text-weight-bold notification is-primary">Tabla de Distintas combinaciones</h2>
+                    </div>
+                </article>
+                <article class="columns">
+                    <div class="column is-6">
+                        <div class="table-container">
+                            <table class="table" id="tables">
+                            <thead>
+                            <tr>
+                                <th>Número</th>
+                                <th>3 dados iguales</th>
+                                <th>4 dados iguales</th>
+                                <th>5 dados iguales</th>
+                                <th>6 dados iguales</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>número 1</td>
+                                <td>1000</td>
+                                <td>2000</td>
+                                <td>4000</td>
+                                <td>8000</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>número 2</td>
+                                <td>200</td>
+                                <td>400</td>
+                                <td>800</td>
+                                <td>1600</td>
+                            </tr>
+                            <tr>
+                                <td>número 3</td>
+                                <td>300</td>
+                                <td>600</td>
+                                <td>1200</td>
+                                <td>2400</td>
+                            </tr>
+                            <tr>
+                                <td>número 4</td>
+                                <td>400</td>
+                                <td>800</td>
+                                <td>1600</td>
+                                <td>3200</td>
+                            </tr>
+                            <tr>
+                                <td>número 5</td>
+                                <td>500</td>
+                                <td>1000</td>
+                                <td>2000</td>
+                                <td>4000</td>
+                            </tr>
+                            <tr>
+                                <td>número 6</td>
+                                <td>600</td>
+                                <td>1200</td>
+                                <td>2400</td>
+                                <td>4800</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        
+                            <article class="message is-warning">
+                                <div class="message-header">
+                                  <h2 class="subtitle is-4 has-text-weight-bold has-text-white is-dark">Regla Importante!</h2>
+                                </div>
+                                <div class="message-body">
+                                   <p class="has-text-weight-semibold"> 
+                                    NO PUEDES RETIRARTE SIN HABER CONSEGUIDO UN MINIMO DE 450 PUNTOS PARA ENTRAR A JUGAR, LUEGO DE HABER ENTRADO Y HABER SUMADO PUNTOS EN LA TABLA PRINCIPAL DE PUNTAJES, PODRAS RETIRARTE CON LOS PUNTOS QUE QUIERAS.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="message is-primary">
+                                <div class="message-header" >
+                                  <h2 class="subtitle is-4 has-text-weight-bold has-text-white has-text-centered">Vamos a jugar?</h2>
+                                </div>
+                            </article>
+                            <div class="columns">
+                                <div class="column is-offset-one-quarter">
+                                    <a href="juego.html" class="button is-success has-text-weight-semibold">Vamos!</a>
+                                </div>
+                                <div class="column is-5">
+                                    <button class="button is-danger has-text-weight-semibold" id="miedo">Todavia no</button>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </article>
+            </section>
+            <script src="js/index.js"></script>
+</body>
+</html>
